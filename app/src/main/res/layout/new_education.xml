@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    >
+
+<!--Completion Year-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Completion Year :"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@color/black"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:paddingLeft="10dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/completion_year"
+        android:textColorHint="#C1655D5D"
+        android:hint="End Year"
+        />
+    </LinearLayout>
+
+<!--Institute-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Institute: "
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@color/black"
+
+            />
+    <EditText
+        android:textColorHint="#C1655D5D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/institue"
+        android:hint="School"
+        android:background="@drawable/roundstyle"
+        android:paddingLeft="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+
+        android:gravity="center"
+        />
+    </LinearLayout>
+<!-- Degree   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Degree:"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@color/black"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/degree"
+            android:hint="Degree"
+            android:textColorHint="#C1655D5D"
+            android:textColor="@color/black"
+            android:background="@drawable/roundstyle"
+            android:paddingLeft="10dp"
+            android:padding="5dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+<!--  Buttons  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_button"
+            android:inputType="text"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="25dp"
+             />
+
+        <TextView
+            android:layout_marginHorizontal="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_button"
+            android:inputType="text"
+            android:text="Add"
+            android:textColor="@color/black"
+
+             />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

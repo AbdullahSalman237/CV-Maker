@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+<TextView
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:text="Interest: "
+    android:textColor="@color/black"
+    android:layout_marginHorizontal="10dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/interest"
+        android:textColorHint="#C1655D5D"
+        android:textColor="@color/black"
+        android:background="@drawable/roundstyle"
+        android:paddingLeft="10dp"
+        android:padding="5dp"
+        android:inputType="text"
+        android:hint="Interest"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_button"
+            android:inputType="text"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_marginHorizontal="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_button"
+            android:inputType="text"
+            android:text="Add"
+            android:textColor="@color/black"
+
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+</LinearLayout>

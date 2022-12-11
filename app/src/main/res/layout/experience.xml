@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/company_name"
+        android:textColor="#e91d63"
+        android:textSize="12dp"
+        android:fontFamily="@font/sourcecodecro_variablefont_wght"
+        android:textStyle="bold"
+        android:text="company"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:fontFamily="@font/sourcecodepro_variablefontwght"
+            android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_worked"
+        android:text="2020-2022"
+        android:textSize="9dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sourcecodepro_variablefontwght"
+        />
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/job_title"
+            android:text="Job"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sourcecodepro_variablefontwght"
+            android:textSize="9dp"
+            android:layout_marginHorizontal="40dp"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

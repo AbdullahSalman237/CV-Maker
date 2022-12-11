@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/institue"
+        android:fontFamily="@font/sourcecodecro_variablefont_wght"
+        android:text="institute"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="#e91d63"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/degree"
+            android:fontFamily="@font/sourcecodepro_variablefontwght"
+            android:text="Degree"
+            android:textSize="9dp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/completion_year"
+        android:text="Year"
+        android:textSize="9dp"
+        android:fontFamily="@font/sourcecodepro_variablefontwght"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

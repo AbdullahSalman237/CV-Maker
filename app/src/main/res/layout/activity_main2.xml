@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="25dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Emial"
+                android:textColor="#999999"
+                android:textSize="9sp"
+                android:text="Email"
+                android:fontFamily="@font/roboto_black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/NO"
+                android:textColor="#e91d63"
+                android:layout_marginBottom="20dp"
+                android:textSize="9sp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Phone NO"/>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#424242"
+        android:textSize="12sp"
+        android:fontFamily="@font/oswald_medium"
+
+        android:text="This is the Name"
+
+        />
+
+
+
+</LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            android:text="Skills"
+            android:id="@+id/skillHeading"
+            android:textColor="#424242"
+            android:fontFamily="@font/oswald_medium"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/skillRecyclerView"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/skills"
+            android:backgroundTint="@color/white"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:textSize="12dp"
+            android:textColor="#424242"
+            android:id="@+id/experienceHeading"
+            android:fontFamily="@font/oswald_medium"
+            android:textStyle="bold"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ExperienceRecyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            tools:listitem="@layout/experience"
+            />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Education"
+    android:id="@+id/EducationHeading"
+    android:textStyle="bold"
+    android:textSize="12dp"
+    android:fontFamily="@font/oswald_medium"
+
+    />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/educationRecyclerView"
+
+            tools:listitem="@layout/education"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project"
+            android:textSize="12dp"
+            android:id="@+id/projectHeading"
+            android:textColor="#424242"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/oswald_medium"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/projectRecyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            tools:listitem="@layout/projects"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest"
+            android:id="@+id/interestHeading"
+            android:textColor="#424242"
+            android:textStyle="bold"
+            android:fontFamily="@font/oswald_medium"
+            android:textSize="12dp"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/InterestRecyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            tools:listitem="@layout/interest"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:layout_gravity="center"
+            android:text="Get Resume"
+
+            />
+    </LinearLayout>
+</ScrollView>

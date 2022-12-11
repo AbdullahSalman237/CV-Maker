@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp">
+
+
+        <!--  Image    -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:id="@+id/profile_pic"
+                android:layout_marginVertical="10dp"
+
+                android:src="@drawable/empty"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="14dp"
+                android:layout_gravity="center">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Add Image"
+                android:id="@+id/imageButton"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/roundtext"
+                android:paddingVertical="3dp"
+                android:paddingHorizontal="10dp"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Remove Image"
+                android:id="@+id/imageRemoveButton"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/roundtext"
+                android:paddingVertical="3dp"
+                android:paddingHorizontal="10dp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <!--First Name-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="2dp"
+            >
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="First Name"
+            />
+        <EditText
+
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/firstName"
+            android:background="@drawable/roundstyle"
+            android:paddingLeft="10dp"
+            android:padding="5dp"
+            android:hint="First Name"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:orientation="vertical">
+<!--Last Name-->
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="2dp"
+            android:text="Last Name"
+
+
+            />
+        <EditText
+
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/lastName"
+            android:hint="Last Name"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/roundstyle"
+            />
+        </LinearLayout>
+        </LinearLayout>
+<!-- Email ID -->
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"
+            android:text="Email Address"
+
+
+            />
+        <EditText
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/emailAddress"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:hint="abc@mail.com"
+            android:background="@drawable/roundstyle"
+            />
+
+<!--Phone No-->
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Phone No"
+            android:layout_marginHorizontal="5dp"
+
+            />
+<!--   country code and Phone No     -->
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:paddingHorizontal="5dp"
+            android:background="@drawable/roundstyle"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+92 "
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:id="@+id/Phone_No"
+            android:hint="3019876542"
+            />
+
+        </LinearLayout>
+
+        <!--   Skills     -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            >
+<TextView
+    android:layout_width="155dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:text="Skills"/>
+<TextView
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textColor="@color/white"
+    android:id="@+id/addNewSkill"
+    android:background="@drawable/roundtext"
+
+    android:text="Add Skills"/>
+        </LinearLayout>
+<!--      Recycler View to get skills from an array      -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/skillRecyclerView"
+
+            tools:listitem="@layout/skills"
+            />
+<!--    Projects    -->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginVertical="10dp">
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Projects"
+                android:textColor="@color/black"
+            />
+        <TextView
+
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Add Project"
+            android:background="@drawable/roundtext"
+            android:layout_marginHorizontal="10dp"
+            android:padding="5dp"
+            android:id="@+id/addNewProject"
+                />
+
+
+</LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/projectRecyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            tools:listitem="@layout/projects"
+            />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        >
+    <TextView
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Experience"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:text="Add Experience"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/addNewExperience"
+        android:background="@drawable/roundtext"
+
+        />
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ExperienceRecyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            tools:listitem="@layout/experience"
+            />
+    <!--   Interest     -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Interest"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:id="@+id/addNewInterest"
+
+                android:padding="5dp"
+                android:background="@drawable/roundtext"
+                android:text="Add Interest"/>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/InterestRecyclerView"
+
+            tools:listitem="@layout/interest"
+            />
+
+        <!--Education-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/roundtext"
+                android:id="@+id/addNewEducation"
+
+                android:padding="5dp"
+                android:text="Add Education"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/educationRecyclerView"
+
+            tools:listitem="@layout/education"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Preview Resume"
+            android:backgroundTint="@color/purple_500"
+            android:id="@+id/preview"
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
