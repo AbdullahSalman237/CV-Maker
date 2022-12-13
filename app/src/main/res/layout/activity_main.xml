@@ -9,9 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginHorizontal="10dp">
+        android:layout_marginHorizontal="10dp"
 
 
+        >
         <!--  Image    -->
         <LinearLayout
             android:layout_width="wrap_content"
@@ -64,7 +65,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            
             android:orientation="horizontal">
             <!--First Name-->
 
@@ -95,12 +96,13 @@
             android:hint="First Name"
             />
         </LinearLayout>
+<!--Last Name-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="2dp"
             android:orientation="vertical">
-<!--Last Name-->
+
         <TextView
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
@@ -130,6 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+
             android:layout_marginHorizontal="5dp"
             android:text="Email Address"
 
@@ -364,10 +367,10 @@
             android:backgroundTint="@color/purple_500"
             android:id="@+id/preview"
             />
-
-
+   
+   
     </LinearLayout>
-
+   
 
 
 </ScrollView>
